@@ -4,8 +4,8 @@
 }
 
 [class*="col-"]{
-  height: 100px;
-  background-color: pink;
+  /* height: 100px; */
+  /* background-color: pink; */
   border: 1px solid black;
 }
 
@@ -20,20 +20,124 @@
 
 
 /* regole generali */
+body{
+  font-family: 'Inter', sans-serif;
+  color: #79849D;
+}
+
 .center_container{
   text-align: center;
-  padding: 30px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .center_container_plus{
   text-align: center;
-  padding: 50px auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.btn{
+  color: #016DFF;
+  border: 1px solid #016DFF;
+}
+
+.black_text{
+  color: black;
+}
+
+.white_text{
+  color: white;
+}
+
+.blu_text{
+  color: #016DFF;
+}
+
+/* regole header */
+header .navbar-default {
+  background-color: white;
+}
+
+header .navbar-default .navbar-toggle,
+header .navbar-default
+{
+  border-color: transparent;
+}
+
+header .navbar-default .navbar-toggle .icon-bar{
+  background-color: #016DFF;
+}
+
+header .navbar > .container .navbar-brand{
+  margin-right: 10vw;
+  max-width: 100px;
+}
+
+header .navbar > .container .navbar-brand img{
+  width: 100px;
+}
+
+header .navbar-default .navbar-nav > li > a{
+  color: black;
+}
+
+header .btn-default:hover{
+  background-color: #016DFF;
+  border: 1px solid white;
+  color:white;
+}
+
+header .nav > li > a{
+  padding: 15px 0 0;
+  margin: auto 15px;
 }
 
 /* regole jumbotron */
 #my_jumbotron.center_container{
+  background-image: url('../img/jumbo.svg');
+  opacity: 0.9;
   margin-top: 50px;
 }
+
+#my_jumbotron .container .jumbotron{
+  padding:0;
+  background-color: transparent;
+  color: white;
+}
+
+.jumbotron_form{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+#my_jumbotron .btn{
+  background-color: #579AFF;
+  border: 1px solid #579AFF;
+  color: white;
+}
+
+#my_jumbotron .btn-lg{
+  padding: 0;
+}
+
+#my_jumbotron .jumbotron_form .btn:nth-last-child(2){
+  background-color: white;
+  color:grey;
+  box-shadow: 1px 1px 2px 2px #88888850;
+  border: none;
+}
+
+.jumbotron_form p:last-child{
+  margin-top: 10px;
+}
+
+button img{
+  width: 15px;
+}
+
+
 
 /* media query */
 @media all and (max-width: 1200px){
@@ -43,4 +147,16 @@
     margin-top: 50px;
   }
 
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+   .navbar-collapse.collapse {
+       display: none !important;
+   }
+   .navbar-toggle{
+        display: block !important;
+   }
+   .navbar-header{
+        float: none;
+   }
 }
