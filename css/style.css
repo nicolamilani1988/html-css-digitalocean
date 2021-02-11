@@ -1,0 +1,46 @@
+/* debug */
+.row{
+  border: 1px solid red;
+}
+
+[class*="col-"]{
+  height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.container{
+  border: 1px solid blue;
+}
+
+#my_why .container .row:nth-child(2){
+  height: 400px;
+  background-color: green;
+}
+
+
+/* regole generali */
+.center_container{
+  text-align: center;
+  padding: 30px auto;
+}
+
+.center_container_plus{
+  text-align: center;
+  padding: 50px auto;
+}
+
+/* regole jumbotron */
+#my_jumbotron.center_container{
+  margin-top: 50px;
+}
+
+/* media query */
+@media all and (max-width: 1200px){
+
+  #my_who [class*="col-"]:last-child,
+  #my_who [class*="col-"]:nth-child(2){
+    margin-top: 50px;
+  }
+
+}
