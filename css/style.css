@@ -60,6 +60,21 @@ body{
   background-color: #F3F5F9;
 }
 
+#my_why .thumbnail > img,
+#my_features .thumbnail > img{
+  margin: 0;
+}
+
+#my_why .thumbnail,
+#my_features .thumbnail{
+  border: 1px solid transparent;
+}
+
+#my_why .thumbnail p,
+#my_features .thumbnail p{
+  color: #79849D;
+}
+
 
 /* regole header */
 header .navbar-default {
@@ -172,17 +187,6 @@ header .nav > li > a{
   color:#79849D;
 }
 
-#my_why .thumbnail{
-  border: 1px solid transparent;
-}
-
-#my_why .thumbnail > img{
-  margin: 0;
-}
-
-#my_why .thumbnail p{
-  color: #79849D;
-}
 
 #my_why .thumbnail .caption{
   padding-left: 0;
@@ -220,6 +224,12 @@ header .nav > li > a{
 
 #my_who .glyphicon{
   font-size: 40px;
+}
+
+
+/* regole quarta parte main: features */
+#my_features .container .row:first-child{
+  margin-bottom: 50px;
 }
 
 
