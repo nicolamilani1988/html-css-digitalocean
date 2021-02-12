@@ -14,7 +14,7 @@
 }
 
 #my_why .container .row:nth-child(2){
-  height: 400px;
+  /* height: 400px; */
   /* background-color: green; */
 }
 
@@ -53,6 +53,13 @@ body{
 .blu_text{
   color: #016DFF;
 }
+
+
+/* regole condivise */
+#my_customers, #my_who{
+  background-color: #F3F5F9;
+}
+
 
 /* regole header */
 header .navbar-default {
@@ -141,10 +148,6 @@ header .nav > li > a{
 
 
 /* regole prima parte main: my_customers */
-#my_customers{
-  background-color: #F3F5F9;
-}
-
 #my_customers .container .row:nth-child(2){
   margin-top: 40px;
   margin-bottom: 40px;
@@ -190,26 +193,65 @@ header .nav > li > a{
 }
 
 
+/* regole terza parte main: who */
+#my_who .container .row:first-child>:first-child{
+  margin-bottom: 40px;
+}
+
+#my_who .container .row:nth-child(2){
+  position: relative;
+}
+
+#my_who .container .row:nth-child(2) p{
+  margin: 10px auto;
+}
+
+#my_who .container .row:nth-child(2)>div:nth-child(2){
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+#my_who .container .row:nth-child(2)>div:nth-child(4){
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#my_who .glyphicon{
+  font-size: 40px;
+}
+
+
 
 
 /* media query */
 @media all and (max-width: 1200px){
 
-  #my_who [class*="col-"]:last-child,
-  #my_who [class*="col-"]:nth-child(2){
-    margin-top: 50px;
+  #my_who .container .row:nth-child(2),
+  #my_who .container .row:nth-child(3){
+    margin-top: 60px;
+  }
+
+}
+
+@media all and (max-width: 768px){
+
+  #my_who .container .row:nth-child(2)>div:nth-child(2),
+  #my_who .container .row:nth-child(2)>div:nth-child(4){
+    display: none;
   }
 
 }
 
 @media all and (min-width: 768px) and (max-width: 1200px) {
-   .navbar-collapse.collapse {
+   header .navbar-collapse.collapse {
        display: none !important;
    }
-   .navbar-toggle{
+   header .navbar-toggle{
         display: block !important;
    }
-   .navbar-header{
+   header .navbar-header{
         float: none;
    }
 }
