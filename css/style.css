@@ -79,6 +79,10 @@ a.blu_text>i{
   color: #79849D;
 }
 
+#my_start, #my_countries{
+  background: linear-gradient(to bottom, #0048C6 , #001E9A)
+}
+
 
 /* regole header */
 header .navbar-default {
@@ -282,6 +286,12 @@ header .nav > li > a{
   border-radius: 20px;
   padding: 40px 0;
   /* height: 100px; */
+}
+
+
+/* regole settima parte main: my love */
+#my_start .container h2{
+  margin-bottom: 20px;
 }
 
 
