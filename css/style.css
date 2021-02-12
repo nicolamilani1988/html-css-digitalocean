@@ -54,9 +54,13 @@ body{
   color: #016DFF;
 }
 
+a.blu_text>i{
+  margin-left: 5px;
+}
+
 
 /* regole condivise */
-#my_customers, #my_who{
+#my_customers, #my_who, #my_love{
   background-color: #F3F5F9;
 }
 
@@ -197,32 +201,40 @@ header .nav > li > a{
 }
 
 
-/* regole terza parte main: who */
-#my_who .container .row:first-child>:first-child{
+/* regole terza parte main: who + sesta parte: love */
+#my_who .container .row:first-child>:first-child,
+#my_love .container .row:first-child>:first-child{
   margin-bottom: 40px;
 }
 
-#my_who .container .row:nth-child(2){
+#my_who .container .row:nth-child(2),
+#my_love .container .row:nth-child(2){
   position: relative;
 }
 
-#my_who .container .row:nth-child(2) p{
+#my_who .container .row:nth-child(2) p,
+#my_love .container .row:last-child{
   margin: 10px auto;
 }
 
-#my_who .container .row:nth-child(2)>div:nth-child(2){
+#my_who .container .row:nth-child(2)>div:nth-child(2),
+#my_love .container .row:nth-child(2)>div:nth-child(2){
   position: absolute;
   top: 50%;
   left: 0;
+  transform: translate(0 , -50%);
 }
 
-#my_who .container .row:nth-child(2)>div:nth-child(4){
+#my_who .container .row:nth-child(2)>div:nth-child(4),
+#my_love .container .row:nth-child(2)>div:nth-child(4){
   position: absolute;
   top: 50%;
   right: 0;
+  transform: translate(0 , -50%);
 }
 
-#my_who .glyphicon{
+#my_who .glyphicon,
+#my_love .glyphicon{
   font-size: 40px;
 }
 
@@ -263,7 +275,14 @@ header .nav > li > a{
 }
 
 
-
+/* regole sesta parte: love(VEDI REGOLE TERZA PARTE: MY_WHO) */
+/* regole sesta parte:love non condivise */
+.white_screen{
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 0;
+  /* height: 100px; */
+}
 
 
 
@@ -280,7 +299,9 @@ header .nav > li > a{
 @media all and (max-width: 768px){
 
   #my_who .container .row:nth-child(2)>div:nth-child(2),
-  #my_who .container .row:nth-child(2)>div:nth-child(4){
+  #my_who .container .row:nth-child(2)>div:nth-child(4),
+  #my_love .container .row:nth-child(2)>div:nth-child(2),
+  #my_love .container .row:nth-child(2)>div:nth-child(4){
     display: none;
   }
 
