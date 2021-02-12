@@ -15,7 +15,7 @@
 
 #my_why .container .row:nth-child(2){
   height: 400px;
-  background-color: green;
+  /* background-color: green; */
 }
 
 
@@ -93,6 +93,7 @@ header .nav > li > a{
   margin: auto 15px;
 }
 
+
 /* regole jumbotron */
 #my_jumbotron.center_container{
   background-image: url('../img/jumbo.svg');
@@ -119,7 +120,8 @@ header .nav > li > a{
 }
 
 #my_jumbotron .btn-lg{
-  padding: 0;
+  padding: 2px 0;
+  line-height: inherit;
 }
 
 #my_jumbotron .jumbotron_form .btn:nth-last-child(2){
@@ -134,11 +136,11 @@ header .nav > li > a{
 }
 
 #my_jumbotron button img{
-  width: 15px;
+  width: 14px;
 }
 
 
-/* regole #my_customers */
+/* regole prima parte main: my_customers */
 #my_customers{
   background-color: #F3F5F9;
 }
@@ -147,6 +149,46 @@ header .nav > li > a{
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+
+/* regole seconda parte main: my_why */
+#my_why .container .row:first-child{
+  margin-bottom: 40px;
+}
+
+#my_why .list-group-item{
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 2px solid #79849D;
+  border-radius: 0;
+}
+
+#my_why button{
+  font-size: 18px;
+  color:#79849D;
+}
+
+#my_why .thumbnail{
+  border: 1px solid transparent;
+}
+
+#my_why .thumbnail > img{
+  margin: 0;
+}
+
+#my_why .thumbnail p{
+  color: #79849D;
+}
+
+#my_why .thumbnail .caption{
+  padding-left: 0;
+}
+
+#my_why .container .row:last-child div:last-child>div{
+  padding-left: 0px;
+}
+
 
 
 

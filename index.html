@@ -105,7 +105,7 @@ h2<!DOCTYPE html>
 
           </div>
           <!-- form jumbotron -->
-          <div class="col-lg-offset-0 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-12">
+          <div class="col-sm-5 col-xs-12">
 
             <div class="jumbotron_form">
 
@@ -131,11 +131,11 @@ h2<!DOCTYPE html>
               </form>
 
               <button type="button" class="btn btn-primary btn-lg btn-block">
-                <small><strong>Create your account</strong></small>
+                <small>Create your account</small>
               </button>
               <button type="button" class="btn btn-primary btn-lg btn-block">
                 <img src="./img/google-icon.png" alt="google-icon">
-                <small><strong>Sign up with google</strong></small>
+                <small class="text-muted">Sign up with google</small>
               </button>
 
               <p class="black_text">
@@ -238,22 +238,78 @@ h2<!DOCTYPE html>
 
           <div class="row">
             <!-- parte menu -->
-            <div class="col-md-4 col-xs-12">
-              deploy manage ecc..
+            <div class="col-sm-offset-1 col-sm-2 col-xs-12">
+              <div class="list-group">
+                <button type="button" class="list-group-item">Deploy</button>
+                <button type="button" class="list-group-item">Manage</button>
+                <button type="button" class="list-group-item">Secure</button>
+                <button type="button" class="list-group-item">Scale</button>
+                <button type="button" class="list-group-item">Monitor</button>
+              </div>
             </div>
             <!-- 4 keypoints -->
-            <div class="col-md-8 col-xs-12">
-              <div class="col-md-6 col-xs-12">
-                keypoint1
+            <div class="col-sm-offset-1 col-sm-8 col-xs-12">
+
+              <!-- primo keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                  <img src="./img/cluster-deploy.svg" alt="cluster-deploy-pic">
+                  <div class="caption">
+                    <h4 class="text-left">
+                      Cluster deployments
+                    </h4>
+                    <p class="text-left">
+                      Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6 col-xs-12">
-                keypoint2
+
+              <!-- secondo keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                  <img src="./img/optimized-compute.svg" alt="optimized-compute-pic">
+                  <div class="caption">
+                    <h4 class="text-left">
+                      Optimized compute types
+                    </h4>
+                    <p class="text-left">
+                      Get the compute resources you need with Standard or Optimized Droplets.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6 col-xs-12">
-                keypoint3
+
+              <div class="clearfix visible-lg-block clearfix visible-md-block clearfix visible-sm-block"></div>
+
+              <!-- terzo keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                  <img src="./img/one-click.svg" alt="one-click-pic">
+                  <div class="caption">
+                    <h4 class="text-left">
+                      One-click apps
+                    </h4>
+                    <p class="text-left">
+                      Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker and more.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6 col-xs-12">
-                keypoint4
+
+              <!-- quarto keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                  <img src="./img/global.svg" alt="global-pic">
+                  <div class="caption">
+                    <h4 class="text-left">
+                      Global availability
+                    </h4>
+                    <p class="text-left">
+                      Deploy to any of our data center regions around the world.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
