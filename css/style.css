@@ -233,6 +233,38 @@ header .nav > li > a{
 }
 
 
+/* regole quinta parte main: my_countries */
+#my_countries{
+  background: linear-gradient(to bottom, #0048C6 , #001E9A)
+}
+
+#my_countries .table-bordered{
+  border: 0;
+}
+
+#my_countries .table-bordered > tbody > tr > td{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid white;
+}
+
+#my_countries .table-bordered > tbody > tr:last-child > td{
+  border-bottom: 0;
+}
+
+#my_countries .table-bordered p{
+  margin: 0;
+  padding: 10px 0;
+}
+
+#my_countries .table-bordered a{
+  color: #00D7D2;
+}
+
+
+
+
 
 
 /* media query */
@@ -264,4 +296,13 @@ header .nav > li > a{
    header .navbar-header{
         float: none;
    }
+}
+
+
+@media all and (max-width: 1200px){
+
+  #my_countries .container .row>div:first-child{
+    margin-bottom: 40px;
+  }
+
 }
