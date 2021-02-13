@@ -102,14 +102,19 @@ header .navbar-default .navbar-toggle .icon-bar{
 header .navbar > .container .navbar-brand{
   margin-right: 10vw;
   max-width: 100px;
+  padding: 10px 15px;
 }
 
 header .navbar > .container .navbar-brand img{
-  width: 100px;
+  width: 150px;
 }
 
 header .navbar-default .navbar-nav > li > a{
   color: black;
+}
+
+header .navbar-default .navbar-nav > li > a:hover{
+  color: #016DFF;
 }
 
 header .btn-default:hover{
@@ -117,18 +122,19 @@ header .btn-default:hover{
   border: 1px solid white;
   color:white;
 }
-
+/* 
 header .nav > li > a{
   padding: 15px 0 0;
   margin: auto 15px;
-}
+} */
+
 
 
 /* regole jumbotron */
 #my_jumbotron.center_container{
   background-image: url('../img/jumbo.svg');
   opacity: 0.9;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #my_jumbotron .container .jumbotron{
