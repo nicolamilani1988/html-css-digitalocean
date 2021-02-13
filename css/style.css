@@ -289,10 +289,25 @@ header .nav > li > a{
 }
 
 
-/* regole settima parte main: my love */
+/* regole settima parte main: my start */
 #my_start .container h2{
   margin-bottom: 20px;
 }
+
+#my_start .btn{
+  border: 1px solid grey;
+}
+
+
+/* regole footer */
+footer{
+  background-color: #031C4E;
+}
+
+.lightgrey_text{
+  color: #828CA3;
+}
+
 
 
 
