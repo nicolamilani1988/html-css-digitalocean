@@ -269,6 +269,10 @@ header .nav > li > a{
   margin-bottom: 40px;
 }
 
+#my_features .container .row:last-child>div *{
+  padding-left: 0;
+}
+
 
 /* regole quinta parte main: my_countries */
 #my_countries{
@@ -306,7 +310,6 @@ header .nav > li > a{
   background-color: white;
   border-radius: 20px;
   padding: 40px 0;
-  /* height: 100px; */
 }
 
 
@@ -317,6 +320,10 @@ header .nav > li > a{
 
 #my_start .btn{
   border: 1px solid grey;
+}
+
+#my_start .btn-default:hover{
+  color: #016DFF;
 }
 
 
