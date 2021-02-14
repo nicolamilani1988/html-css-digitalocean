@@ -68,6 +68,13 @@ a.blu_text>i{
   background-color: #F3F5F9;
 }
 
+#my_why .container .row:first-child,
+#my_customers .container .row:first-child,
+#my_who .container .row:first-child>:first-child,
+#my_love .container .row:first-child>:first-child{
+  margin-bottom: 70px;
+}
+
 #my_why .thumbnail > img,
 #my_features .thumbnail > img{
   margin: 0;
@@ -187,16 +194,11 @@ header .nav > li > a{
 
 /* regole prima parte main: my_customers */
 #my_customers .container .row:nth-child(2){
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 
 /* regole seconda parte main: my_why */
-#my_why .container .row:first-child{
-  margin-bottom: 40px;
-}
-
 #my_why .list-group-item{
   border-top: none;
   border-right: none;
@@ -221,11 +223,6 @@ header .nav > li > a{
 
 
 /* regole terza parte main: who + sesta parte: love */
-#my_who .container .row:first-child>:first-child,
-#my_love .container .row:first-child>:first-child{
-  margin-bottom: 40px;
-}
-
 #my_who .container .row:nth-child(2),
 #my_love .container .row:nth-child(2){
   position: relative;
@@ -260,7 +257,7 @@ header .nav > li > a{
 
 /* regole quarta parte main: features */
 #my_features .container .row:first-child{
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 
