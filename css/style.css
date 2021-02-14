@@ -62,6 +62,11 @@ a.blu_text>i{
   margin-left: 5px;
 }
 
+h4.subtitle_size{
+  font-size: 21px;
+  line-height:  1.42857143;
+}
+
 
 /* regole condivise */
 #my_customers, #my_who, #my_love{
@@ -203,21 +208,25 @@ header .nav > li > a{
   border-top: none;
   border-right: none;
   border-bottom: none;
-  border-left: 2px solid #79849D;
+  border-left: 2px solid #626262;
   border-radius: 0;
 }
 
 #my_why button{
-  font-size: 18px;
+  font-size: 21px;
   color:#79849D;
 }
 
-
-#my_why .thumbnail .caption{
-  padding-left: 0;
+#my_why .list-group-item.active{
+  background-color: transparent;
+  border-left: 2px solid #016DFF;
 }
 
-#my_why .container .row:last-child div:last-child>div{
+#my_why .thumbnail>.caption{
+  padding: 0;
+}
+
+#my_why .container .row:last-child>div:last-child *{
   padding-left: 0px;
 }
 
