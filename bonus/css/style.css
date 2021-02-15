@@ -1,0 +1,476 @@
+/* debug */
+.row{
+  border: 1px solid red;
+}
+
+[class*="col-"]{
+  /* height: 100px; */
+  /* background-color: pink; */
+  border: 1px solid black;
+}
+
+.container{
+  border: 1px solid blue;
+}
+
+#my_why .container .row:nth-child(2){
+  /* height: 400px; */
+  /* background-color: green; */
+}
+
+
+/* regole generali */
+body{
+  font-family: 'Inter', sans-serif;
+  color: #79849D;
+}
+
+.center_container{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.center_container_plus{
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.btn{
+  color: #016DFF;
+  border: 1px solid #016DFF;
+}
+
+.black_text{
+  color: black;
+}
+
+.white_text{
+  color: white;
+}
+
+.blu_text{
+  color: #016DFF;
+}
+
+.lightgrey_text{
+  color: lightgrey;
+}
+
+a.blu_text>i{
+  margin-left: 5px;
+}
+
+h4.subtitle_size{
+  font-size: 21px;
+  line-height:  1.42857143;
+}
+
+
+/* regole condivise */
+#my_customers, #my_who, #my_love{
+  background-color: #F3F5F9;
+}
+
+#my_why .container .row:first-child,
+#my_customers .container .row:first-child,
+#my_who .container .row:first-child>:first-child,
+#my_love .container .row:first-child>:first-child{
+  margin-bottom: 70px;
+}
+
+#my_why .thumbnail > img,
+#my_features .thumbnail > img{
+  margin: 0;
+}
+
+#my_why .thumbnail,
+#my_features .thumbnail{
+  border: 1px solid transparent;
+}
+
+#my_why .thumbnail p,
+#my_features .thumbnail p{
+  color: #79849D;
+}
+
+#my_start, #my_countries{
+  background: linear-gradient(to bottom, #0048C6 , #001E9A)
+}
+
+
+/* regole header */
+header .navbar-default {
+  background-color: white;
+}
+
+header .navbar-default .navbar-toggle,
+header .navbar-default
+{
+  border-color: transparent;
+}
+
+header .navbar-default .navbar-toggle .icon-bar{
+  background-color: #016DFF;
+}
+
+header .navbar > .container .navbar-brand{
+  margin-right: 10vw;
+  max-width: 100px;
+  padding: 10px 15px;
+}
+
+header .navbar > .container .navbar-brand img{
+  width: 150px;
+}
+
+header .navbar-default .navbar-nav > li > a{
+  color: black;
+}
+
+header .navbar-default .navbar-nav > li > a:hover{
+  color: #016DFF;
+}
+
+header .btn-default:hover{
+  background-color: #016DFF;
+  border: 1px solid white;
+  color:white;
+}
+/*
+header .nav > li > a{
+  padding: 15px 0 0;
+  margin: auto 15px;
+} */
+
+
+
+/* regole jumbotron */
+#my_jumbotron.center_container{
+  background-image: url('../img/jumbo.svg');
+  opacity: 0.9;
+  margin-top: 30px;
+}
+
+#my_jumbotron .container .jumbotron{
+  padding:0;
+  background-color: transparent;
+  color: white;
+}
+
+.jumbotron_form{
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+#my_jumbotron .btn{
+  background-color: #579AFF;
+  border: 1px solid #579AFF;
+  color: white;
+}
+
+#my_jumbotron .btn:hover{
+  background-color: #016DFF;
+}
+
+#my_jumbotron .btn-lg{
+  padding: 2px 0;
+}
+
+#my_jumbotron .jumbotron_form .btn:nth-last-child(2){
+  background-color: white;
+  color:#626262;
+  box-shadow: 1px 1px 2px 2px #88888850;
+  border: none;
+  font-weight: bold;
+  position: relative;
+}
+
+#my_jumbotron .jumbotron_form .btn:nth-last-child(2):hover{
+  color: #016DFF;
+}
+
+#my_jumbotron button img{
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0 , -50%);
+}
+
+.jumbotron_form p:last-child{
+  margin-top: 10px;
+}
+
+
+/* regole prima parte main: my_customers */
+#my_customers .container .row:nth-child(2){
+  margin-bottom: 70px;
+}
+
+
+/* regole seconda parte main: my_why */
+#my_why .list-group-item{
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 2px solid #626262;
+  border-radius: 0;
+}
+
+#my_why button{
+  font-size: 21px;
+  color:#79849D;
+}
+
+#my_why .list-group-item.active{
+  background-color: transparent;
+  border-left: 2px solid #016DFF;
+}
+
+#my_why .thumbnail>.caption{
+  padding: 0;
+}
+
+#my_why .container .row:last-child>div:last-child *{
+  padding-left: 0px;
+}
+
+
+/* regole terza parte main: who + sesta parte: love */
+#my_who .container .row:nth-child(2),
+#my_love .container .row:nth-child(2){
+  position: relative;
+}
+
+#my_who .container .row:nth-child(2) p,
+#my_love .container .row:last-child{
+  margin: 10px auto;
+}
+
+#my_who .container .row:nth-child(2)>div:nth-child(2),
+#my_love .container .row:nth-child(2)>div:nth-child(2){
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0 , -50%);
+}
+
+#my_who .container .row:nth-child(2)>div:nth-child(4),
+#my_love .container .row:nth-child(2)>div:nth-child(4){
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0 , -50%);
+}
+
+#my_who .glyphicon,
+#my_love .glyphicon{
+  font-size: 40px;
+}
+
+#my_who .container .row:last-child a,
+#my_love .container .row:last-child a{
+  margin-right: 1px;
+  text-decoration: none;
+}
+
+#my_who .container .row:last-child a:hover,
+#my_love .container .row:last-child a:hover{
+  color: #016DFF;
+  border-color: #016DFF;
+}
+
+
+/* regole quarta parte main: features */
+#my_features .container .row:first-child{
+  margin-bottom: 40px;
+}
+
+#my_features .container .row:last-child>div *{
+  padding-left: 0;
+}
+
+
+/* regole quinta parte main: my_countries */
+#my_countries{
+  background: linear-gradient(to bottom, #0048C6 , #001E9A)
+}
+#my_countries .table-bordered{
+  border: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+#my_countries .table-bordered > tbody > tr > td{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid white;
+  padding: 10px 5px;
+}
+
+#my_countries .table-bordered > tbody > tr:last-child > td{
+  border-bottom: 0;
+}
+
+#my_countries .table-bordered a{
+  color: #00D7D2;
+}
+
+#my_countries .table-bordered a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* regole sesta parte: love(VEDI REGOLE TERZA PARTE: MY_WHO) */
+/* regole sesta parte:love non condivise */
+.white_screen{
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 0;
+}
+
+
+/* regole settima parte main: my start */
+#my_start .container h2{
+  margin-bottom: 20px;
+}
+
+#my_start .btn{
+  border: 1px solid grey;
+}
+
+#my_start .btn-default:hover{
+  color: #016DFF;
+}
+
+
+/* regole footer */
+footer{
+  background-color: #031C4E;
+  position: relative;
+}
+
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+footer .text-left div:first-child a{
+  margin-right: 10px;
+  font-size: 21px;
+}
+
+
+/* regole bonus chatbot */
+footer>.media{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 500px;
+  background-color: green;
+}
+
+footer .media-body{
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 70px;
+  opacity: 0;
+}
+
+footer .media-body:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 110px;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid red;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 999;
+}
+
+footer .media-body>span{
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+footer .media-right{
+  padding-right: 30px;
+}
+
+footer .media-right img{
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer .media:hover .media-body{
+  opacity: 1;
+}
+
+
+/* media query */
+@media all and (max-width: 1200px){
+
+  #my_who .container .row:nth-child(2),
+  #my_who .container .row:nth-child(3){
+    margin-top: 60px;
+  }
+
+}
+
+@media all and (max-width: 768px){
+
+  #my_who .container .row:nth-child(2)>div:nth-child(2),
+  #my_who .container .row:nth-child(2)>div:nth-child(4),
+  #my_love .container .row:nth-child(2)>div:nth-child(2),
+  #my_love .container .row:nth-child(2)>div:nth-child(4){
+    display: none;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+   header .navbar-collapse.collapse {
+       display: none !important;
+   }
+   header .navbar-toggle{
+        display: block !important;
+   }
+   header .navbar-header{
+        float: none;
+   }
+}
+
+
+@media all and (max-width: 1200px){
+
+  #my_countries .container .row>div:first-child{
+    margin-bottom: 40px;
+  }
+
+}
+
+@media all and (max-width: 1200px){
+
+  footer>.media{
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+  }
+
+  footer>.media div:first-child{
+    display: block;
+  }
+
+}

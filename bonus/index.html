@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DigitalOcean - The developer cloud</title>
+    <meta name=“viewport” content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- foglio di stile -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <!-- logo + navbar -->
+    <header>
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo.png" alt="logopic">
+            </a>
+
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Products <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Customers
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Community <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Pricing
+                </a>
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#">
+                  Docs
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Support <i class="fas fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Login
+                </a>
+              </li>
+              <li>
+                <form class="navbar-form navbar-left">
+                  <button type="submit" class="btn btn-default">Sign up</button>
+                </form>
+              </li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container -->
+
+      </nav>
+
+    </header>
+
+    <!-- jumbotron -->
+    <section id="my_jumbotron" class="center_container">
+
+      <div class="container">
+
+        <div class="row">
+          <!-- titolo jumbotron -->
+          <div class="col-sm-7 col-xs-12">
+
+            <div class="jumbotron">
+              <h1 class="text-left white_text">The simplest cloud platform for developers & teams</h1>
+            </h4>
+              <h4 class="text-left lightgrey_text subtitle_size">
+                Deploy, manage and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.
+              </h4>
+            </div>
+
+          </div>
+          <!-- form jumbotron -->
+          <div class="col-sm-5 col-xs-12">
+
+            <div class="jumbotron_form">
+              <!-- titolo form jumbotron -->
+              <h2 class="black_text">
+                <strong>Deploy your app in seconds</strong>
+              </h2>
+              <h2 class="blu_text">
+                <strong>Get started now</strong>
+              </h2>
+              <!-- form email e password -->
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+              </form>
+              <!-- bottoni account + google -->
+              <button type="button" class="btn btn-primary btn-lg btn-block">
+                <small>Create your account</small>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-block">
+                <img src="./img/google-icon.png" alt="google-icon">
+                <small>Sign up with google</small>
+              </button>
+              <!-- sottotesto -->
+              <p class="black_text">
+                <small>By signing up you agree to the <a href="#">Terms of service.</a></small>
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- corpo principale -->
+    <main>
+
+      <!-- prima parte main: customer -->
+      <section id="my_customers" class="center_container">
+
+        <div class="container">
+          <!-- titolo -->
+          <div class="row">
+            <div class="col-xs-12">
+              <h4>
+                INNOVATIVE BUSINESSES TRUST DIGITALOCEAN
+              </h4>
+            </div>
+          </div>
+          <!-- loghi -->
+          <div class="row">
+            <!-- logo1 -->
+            <div class="col-md-2 col-xs-6">
+              <img src="./img/docker.svg" alt="docker-logo">
+            </div>
+            <!-- logo2 -->
+            <div class="col-md-2 col-xs-6">
+              <img src="./img/gitlab.svg" alt="gitlab-logo">
+            </div>
+            <!-- logo3 -->
+            <div class="col-md-2 col-xs-6">
+              <img src="./img/slack.svg" alt="slack-logo">
+            </div>
+            <!-- logo 4 -->
+            <div class="col-md-2 col-xs-6">
+              <img src="./img/hashicorp.svg" alt="hashicorp-logo">
+            </div>
+            <!-- logo5 -->
+            <div class="col-md-2 col-xs-6">
+              <img src="./img/hashicorp.svg" alt="hashicorp-logo">
+            </div>
+            <!-- logo 6 -->
+            <div class="col-md-2 col-xs-6">
+              <img src="./img/splunklogo.svg" alt="splunk-logo">
+            </div>
+
+          </div>
+          <!-- customer stories link -->
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="#" class="blu_text">
+                View customer stories <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- seconda parte main: why -->
+      <section id="my_why" class="center_container_plus">
+
+        <div class="container">
+          <!-- titolo + sottotitolo -->
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="black_text">
+                Deploy and scale seamlessly
+              </h2>
+              <h4 class="subtitle_size">
+                Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.
+              </h4>
+            </div>
+          </div>
+          <!-- parte menu + 4 blocchi -->
+          <div class="row">
+            <!-- parte menu -->
+            <div class="col-sm-offset-1 col-sm-2 col-xs-12">
+              <div class="list-group">
+                <button type="button" class="list-group-item active">Deploy</button>
+                <button type="button" class="list-group-item">Manage</button>
+                <button type="button" class="list-group-item">Secure</button>
+                <button type="button" class="list-group-item">Scale</button>
+                <button type="button" class="list-group-item">Monitor</button>
+              </div>
+            </div>
+            <!-- 4 keypoints -->
+            <div class="col-sm-offset-1 col-sm-8 col-xs-12">
+              <!-- primo keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail text-left">
+                  <img src="./img/cluster-deploy.svg" alt="cluster-deploy-pic">
+                  <div class="caption">
+                    <h4>
+                      Cluster deployments
+                    </h4>
+                    <p>
+                      Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- secondo keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail text-left">
+                  <img src="./img/optimized-compute.svg" alt="optimized-compute-pic">
+                  <div class="caption">
+                    <h4>
+                      Optimized compute types
+                    </h4>
+                    <p>
+                      Get the compute resources you need with Standard or Optimized Droplets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- clearfix -->
+              <div class="clearfix visible-lg-block clearfix visible-md-block clearfix visible-sm-block"></div>
+              <!-- terzo keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail text-left">
+                  <img src="./img/one-click.svg" alt="one-click-pic">
+                  <div class="caption">
+                    <h4>
+                      One-click apps
+                    </h4>
+                    <p>
+                      Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- quarto keypoint -->
+              <div class="col-sm-6 col-xs-12">
+                <div class="thumbnail text-left">
+                  <img src="./img/global.svg" alt="global-pic">
+                  <div class="caption">
+                    <h4>
+                      Global availability
+                    </h4>
+                    <p>
+                      Deploy to any of our data center regions around the world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- terza parte main: who -->
+      <section id="my_who" class="center_container_plus">
+
+        <div class="container">
+          <!-- titolo -->
+          <div class="row">
+
+            <div class="col-xs-12">
+              <h2 class="black_text">
+                Designed for developers
+              </h2>
+              <h4 class="subtitle_size">
+                Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.
+              </h4>
+            </div>
+
+          </div>
+          <!-- freccie + immagine -->
+          <div class="row">
+            <!-- clearfix -->
+            <div class="clearfix clearfix visible-md-block clearfix visible-sm-block"></div>
+            <!-- freccia sx -->
+            <div class="col-sm-2">
+              <div class="text-right">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              </div>
+            </div>
+            <!-- immagine -->
+            <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+              <img src="./img/screenshot-create-droplet-12336b41.jpg" class="img-responsive" alt="Responsive image">
+              <p class="black_text">Create compute servers in 55 seconds or less</p>
+            </div>
+            <!-- freccia dx -->
+            <div class="col-sm-2">
+              <div class="text-left">
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right black_text" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- pallini -->
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="#" class="blu_text">
+                <i class="fas fa-circle"></i>
+              </a>
+              <a href="#" class="blu_text">
+                <i class="far fa-circle"></i>
+              </a>
+              <a href="#" class="blu_text">
+                <i class="far fa-circle"></i>
+              </a>
+              <a href="#" class="blu_text">
+                <i class="far fa-circle"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- quarta parte main: features -->
+      <section id="my_features" class="center_container_plus">
+
+        <div class="container">
+          <!-- titolo -->
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="black_text">
+                The features your business needs
+              </h2>
+            </div>
+          </div>
+          <!-- 3 caratteristiche -->
+          <div class="row">
+            <!-- prima caratteristica -->
+            <div class="col-sm-4 col-xs-12">
+              <div class="thumbnail text-left">
+                <img src="./img/pred-pricing.svg" alt="pred-pricing-pic">
+                <div class="caption">
+                  <h4>
+                    Predictable pricing
+                  </h4>
+                  <p>
+                    Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.
+                  </p>
+                  <a href="#" class="blu_text">
+                    Pricing <i class="fas fa-chevron-right"></i>
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- seconda caratteristica -->
+            <div class="col-sm-4 col-xs-12">
+              <div class="thumbnail text-left">
+                <img src="./img/world-class.svg" alt="world-class-pic">
+                <div class="caption">
+                  <h4>
+                    World class service
+                  </h4>
+                  <p>
+                    Free round-the-clock technical support for all customers. You'll feel the love.
+                  </p>
+                  <a href="#" class="blu_text">
+                    Support <i class="fas fa-chevron-right"></i>
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- terza caratteristica -->
+            <div class="col-sm-4 col-xs-12">
+              <div class="thumbnail text-left">
+                <img src="./img/reliable-platform.svg" alt="reliable-platform-pic">
+                <div class="caption">
+                  <h4>
+                    Reliable platform
+                  </h4>
+                  <p>
+                    More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99&percnt; uptime SLA for all services.
+                  </p>
+                  <a href="#" class="blu_text">
+                    Security <i class="fas fa-chevron-right"></i>
+                  </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- quinta parte main: countries -->
+      <section id="my_countries" class="center_container_plus">
+
+        <div class="container">
+          <!-- titolo -->
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="white_text">
+                Service your customer around the world from 12 regions.
+              </h2>
+            </div>
+          </div>
+
+          <!-- paesi -->
+          <div class="row">
+            <!-- colonna paesi sx -->
+            <div class="col-lg-6 col-xs-12">
+
+              <table class="table-bordered">
+                <tr>
+                  <td class="white_text">
+                    AMS2
+                  </td>
+                  <td class="lightgrey_text">
+                    Amsterdam, Netherlands
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    AMS2
+                  </td>
+                  <td class="lightgrey_text">
+                    Amsterdam, Netherlands
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    BLR1
+                  </td>
+                  <td class="lightgrey_text">
+                    Bangalore, India
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    FRA1
+                  </td>
+                  <td class="lightgrey_text">
+                    Frankfurt, German
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    LON1
+                  </td>
+                  <td class="lightgrey_text">
+                    London, UK
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    NYC1
+                  </td>
+                  <td class="lightgrey_text">
+                    New York, USA
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+            <!-- colonna paesi dx -->
+            <div class="col-lg-6 col-xs-12">
+
+              <table class="table-bordered">
+                <tr>
+                  <td class="white_text">
+                    AMS2
+                  </td>
+                  <td class="lightgrey_text">
+                    Amsterdam, Netherlands
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    AMS2
+                  </td>
+                  <td class="lightgrey_text">
+                    Amsterdam, Netherlands
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    BLR1
+                  </td>
+                  <td class="lightgrey_text">
+                    Bangalore, India
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    FRA1
+                  </td>
+                  <td class="lightgrey_text">
+                    Frankfurt, German
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    LON1
+                  </td>
+                  <td class="lightgrey_text">
+                    London, UK
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="white_text">
+                    NYC1
+                  </td>
+                  <td class="lightgrey_text">
+                    New York, USA
+                  </td>
+                  <td class="text-right">
+                    <a href="#">
+                      Test speed <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- sesta parte main: love -->
+      <section id="my_love" class="center_container_plus">
+
+        <div class="container">
+          <!-- titolo -->
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="black_text">
+                Development teams love DigitalOcean
+              </h2>
+            </div>
+          </div>
+          <!-- freccie + contenuto -->
+          <div class="row">
+            <!-- clearfix -->
+            <div class="clearfix clearfix visible-md-block clearfix visible-sm-block"></div>
+            <!-- freccia sx -->
+            <div class="col-sm-2">
+              <div class="text-right">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              </div>
+            </div>
+            <!-- contenuto centrale -->
+            <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+              <div class="white_screen">
+                <img src="./img/rockerbox-logo.webp" alt="logo-rockerbox">
+                <h4 class="subtitle_size">
+                  "We have been able to make scaling the technical infrastructure of our business cost effective and efficient"
+                </h4>
+                <div class="black_text"><strong>Rick O'Toole</strong></div>
+                <p class="black_text">Co-Founder and CTO</p>
+                <p class="blue_text">
+                  <a href="#" class="blu_text">
+                    Read story <i class="fas fa-chevron-right"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!-- freccia dx -->
+            <div class="col-sm-2">
+              <div class="text-left">
+                <a href="#">
+                  <span class="glyphicon glyphicon-chevron-right black_text" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="#" class="blu_text">
+                <i class="fas fa-circle"></i>
+              </a>
+              <a href="#" class="blu_text">
+                <i class="far fa-circle"></i>
+              </a>
+              <a href="#" class="blu_text">
+                <i class="far fa-circle"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- settima parte main: start -->
+      <section id="my_start" class="center_container">
+
+        <div class="container">
+          <!-- titolo + bottone -->
+          <div class="row">
+
+            <div class="col-xs-12">
+              <h2 class="white_text">
+                Get started now.
+              </h2>
+              <button type="button" class="btn btn-default">Create your account</button>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- pie' pagina -->
+    <footer class="center_container_plus">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="text-left">
+            <!-- colonna grossa footer -->
+            <div class="col-lg-4 col-xs-12">
+              <img src="./img/logo-small.svg" alt="logo-small">
+              <p class="lightgrey_text">&copy; 2018 DigitalOcean, LLC. All right reserved.</p>
+              <p>Proudly made in NY</p>
+              <p>
+                <a href="#" class="lightgrey_text">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="lightgrey_text">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#" class="lightgrey_text">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="lightgrey_text">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="lightgrey_text">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </p>
+            </div>
+            <!-- prima colonna -->
+            <div class="col-lg-2 col-sm-6 col-xs-12">
+              <h4 class="white_text">
+                Company
+              </h4>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  About
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Leadership
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Link
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Blog
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Careers
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Partner Network
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Referral program
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Events
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Press
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Legal &amp; Security
+                </a>
+              </p>
+            </div>
+            <!-- seconda colonna -->
+            <div class="col-lg-2 col-sm-6 col-xs-12">
+              <h4 class="white_text">
+                Products
+              </h4>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Droplets
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Spaces
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Kubernetes
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Load Balancers
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Block Storage
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Tools &amp; Integrations
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  One-Click Apps
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  API
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Pricing
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Documentation
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Release Notes
+                </a>
+              </p>
+            </div>
+            <!-- terza colonna -->
+            <div class="col-lg-2 col-sm-6 col-xs-12">
+              <h4 class="white_text">
+                Community
+              </h4>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Tutorials
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Meetups
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Q&amp;A
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Write for Donations
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Droplets for Demos
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Hatch
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Shop Swag
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Research Program
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Currents Research
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Open Source
+                </a>
+              </p>
+            </div>
+            <!-- quarta colonna -->
+            <div class="col-lg-2 col-sm-6 col-xs-12">
+              <h4 class="white_text">
+                Support
+              </h4>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Contact support
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  FAQ
+                </a>
+              </p>
+              <p>
+                <a href="#"  class="lightgrey_text">
+                  Network Status
+                </a>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- bonus chatbot -->
+      <div class="media">
+        <div class="media-body text-left">
+          <span class="media-heading black_text">
+            Can I help answer any questions you have about DigitalOcean?
+          </span>
+        </div>
+        <div class="media-right">
+          <a href="#">
+            <img class="media-object" src="./img/shark.webp" alt="shark_icon">
+          </a>
+        </div>
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
