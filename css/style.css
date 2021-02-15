@@ -332,6 +332,16 @@ footer{
   background-color: #031C4E;
 }
 
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+footer .text-left div:first-child a{
+  margin-right: 10px;
+  font-size: 21px;
+}
+
 
 
 /* media query */
