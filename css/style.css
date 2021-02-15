@@ -171,6 +171,10 @@ header .nav > li > a{
   color: white;
 }
 
+#my_jumbotron .btn:hover{
+  background-color: #016DFF;
+}
+
 #my_jumbotron .btn-lg{
   padding: 2px 0;
 }
@@ -182,6 +186,10 @@ header .nav > li > a{
   border: none;
   font-weight: bold;
   position: relative;
+}
+
+#my_jumbotron .jumbotron_form .btn:nth-last-child(2):hover{
+  color: #016DFF;
 }
 
 #my_jumbotron button img{
@@ -263,6 +271,18 @@ header .nav > li > a{
   font-size: 40px;
 }
 
+#my_who .container .row:last-child a,
+#my_love .container .row:last-child a{
+  margin-right: 1px;
+  text-decoration: none;
+}
+
+#my_who .container .row:last-child a:hover,
+#my_love .container .row:last-child a:hover{
+  color: #016DFF;
+  border-color: #016DFF;
+}
+
 
 /* regole quarta parte main: features */
 #my_features .container .row:first-child{
@@ -298,6 +318,11 @@ header .nav > li > a{
 
 #my_countries .table-bordered a{
   color: #00D7D2;
+}
+
+#my_countries .table-bordered a:hover{
+  color: white;
+  text-decoration: none;
 }
 
 
@@ -379,7 +404,6 @@ footer .text-left div:first-child a{
 
   #my_countries .container .row>div:first-child{
     margin-bottom: 40px;
-    text-align: center;
   }
 
 }
