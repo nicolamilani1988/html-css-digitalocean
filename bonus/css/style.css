@@ -367,7 +367,7 @@ footer .text-left div:first-child a{
 
 
 /* regole bonus chatbot */
-footer>.media{
+/* footer>.media{
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -416,7 +416,71 @@ footer .media-right img{
 
 footer .media:hover .media-body{
   opacity: 1;
+} */
+
+/* regole chatbot con float */
+.my_row{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: green;
+    width: 500px;
+  }
+
+.my_row:after{
+  clear: both;
+  content: '';
+  display:table;
 }
+
+.my_row>div:first-child{
+  float: right;
+  width: 20%;
+}
+
+.my_row>div:first-child img{
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.my_row>div:last-child{
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 70px;
+  background-color: white;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.my_row>div:last-child>span{
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.my_row>div:last-child:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid red;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 999;
+}
+
+
+
+
+
+
+
 
 
 /* media query */
@@ -463,14 +527,34 @@ footer .media:hover .media-body{
 
 @media all and (max-width: 1200px){
 
-  footer>.media{
+  footer>.my_row{
     position: fixed;
     left: 50px;
     bottom: 50px;
   }
 
-  footer>.media div:first-child{
-    display: block;
+  footer .my_row>div:first-child{
+    float: none;
   }
+
+  footer .my_row>div:last-child{
+    width: 90%;
+    float: none;
+    margin-top: 15px;
+  }
+
+  footer .my_row>div:last-child:before {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 85px;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid red;
+    z-index: 999;
+  }
+
 
 }
