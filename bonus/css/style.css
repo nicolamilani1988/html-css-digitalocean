@@ -366,119 +366,67 @@ footer .text-left div:first-child a{
 }
 
 
-/* regole bonus chatbot */
-/* footer>.media{
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  width: 500px;
-  background-color: green;
-}
-
-footer .media-body{
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  line-height: 70px;
-  opacity: 0;
-}
-
-footer .media-body:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 110px;
-  width: 0;
-  border-top: 10px solid transparent;
-  border-left: 10px solid red;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  z-index: 999;
-}
-
-footer .media-body>span{
-  line-height: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-}
-
-footer .media-right{
-  padding-right: 30px;
-}
-
-footer .media-right img{
-  height: 90px;
-  width: 90px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-footer .media:hover .media-body{
-  opacity: 1;
-} */
 
 /* regole chatbot con float */
 .my_row{
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    background-color: green;
-    width: 500px;
-  }
-
-.my_row:after{
-  clear: both;
-  content: '';
-  display:table;
+  position: fixed;
+  bottom:50px;
+  margin-left: 50px;
 }
 
-.my_row>div:first-child{
-  float: right;
-  width: 20%;
+.shark_icon{
+  height: 50px;
+  width: 50px;
+  position: relative;
 }
 
-.my_row>div:first-child img{
-  width: 90px;
-  height: 90px;
+.shark_icon img{
+  height: 50px;
+  width: 50px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.my_row>div:last-child{
-  float: right;
+.hidden_chat{
+  width: 500px;
+  margin-top: 10px;
   padding: 10px;
-  border-radius: 10px;
-  line-height: 70px;
   background-color: white;
-  width: 70%;
-  margin-right: 10px;
+  border-radius: 10px;
+  display: none;
+  position: relative;
 }
 
-.my_row>div:last-child>span{
-  line-height: 20px;
+.my_row:hover .hidden_chat{
   display: inline-block;
-  vertical-align: middle;
-  text-align: left;
 }
 
-.my_row>div:last-child:before {
+.hidden_chat:before {
   content: '';
   position: absolute;
-  top: 50%;
-  right: 90px;
+  top: -20px;
+  left: 15px;
   width: 0;
   border-top: 10px solid transparent;
-  border-left: 10px solid red;
+  border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  z-index: 999;
+  border-bottom: 10px solid white;
 }
 
-
-
-
-
+.shark_icon>a:after {
+  content: '2';
+  position: absolute;
+  background-color: red;
+  color: white;
+  top: -15px;
+  left: 35px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 50%;
+}
 
 
 
@@ -525,36 +473,42 @@ footer .media:hover .media-body{
 
 }
 
-@media all and (max-width: 1200px){
+@media all and (min-width: 1200px){
 
-  footer>.my_row{
-    position: fixed;
-    left: 50px;
-    bottom: 50px;
-  }
+    .my_row{
+      position: fixed;
+      right: 50px;
+      bottom: 50px;
+      margin-left: 0;
+    }
 
-  footer .my_row>div:first-child{
-    float: none;
-  }
+    .my_row:after{
+      display: table;
+      content:'';
+      clear: both;
+    }
 
-  footer .my_row>div:last-child{
-    width: 90%;
-    float: none;
-    margin-top: 15px;
-  }
+    .my_row>div{
+      float: right;
+    }
 
-  footer .my_row>div:last-child:before {
-    content: '';
-    position: absolute;
-    left: 45px;
-    top: 85px;
-    width: 0;
-    border-top: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid red;
-    z-index: 999;
-  }
+    .hidden_chat{
+      margin-right: 10px;
+      margin-top: 0;
+      position: relative;
+    }
+
+    .hidden_chat:before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 10px);
+      left: 500px;
+      width: 0;
+      border-top: 10px solid transparent;
+      border-left: 10px solid white;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
 
 
 }
